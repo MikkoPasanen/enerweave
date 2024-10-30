@@ -1,0 +1,57 @@
+# .gitignore for React Frontend
+
+# Dependency directories
+node_modules/
+.pnp/
+.pnp.js
+
+# Build artifacts
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs and temporary files
+npm-debug.log*
+
+
+# .gitignore for Spring Boot Backend
+
+# Logs
+logs/
+*.log
+spring.log
+
+# Temporary files
+tmp/
+*.tmp
+
+# Compiled binaries
+target/
+bin/
+out/
+
+# Database files
+*.h2.db
+*.mv.db
+
+# Maven and Gradle dependencies
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+**/mvnw
+**/mvnw.cmd
+**/.mvn/wrapper
+.gradle/
+build/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
