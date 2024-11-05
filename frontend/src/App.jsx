@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react"
+
+// Components
+import { Footer } from "./Components/Footer"
+
+// Styles and assets
+import './style/css/index.css'
+import logo from './assets/SPINE-LOGO.png'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [text, setText] = useState('')
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+          "http://api-1300198245.eu-north-1.elb.amazonaws.com:8080/api/hello"
+      );
+      const data = await response.text();
+      console.log(data)
+      setText(data)
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <h1><span>Ener</span>Weave</h1>
+        <h3>Testing out landing page</h3>
+        <img src={logo} alt="spine logo" />
+        <button onClick={() => fetchData()}>Fetch data!</button>
+        <p>{text}</p>
+      </header>
+      <Footer />
     </>
   )
 }
 
 export default App
+

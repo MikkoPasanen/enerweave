@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    color: $primary-color;
+    font: 100% $font;
+    height: 100%;
+    width: 100%;
+}
