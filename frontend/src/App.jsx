@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 // Components
-import { Footer } from "./Components/Footer"
+import { Footer } from "./components/Footer"
 
 // Styles and assets
 import './style/css/index.css'
