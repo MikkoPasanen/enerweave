@@ -24,7 +24,7 @@ public class ControllerService {
             String type = types[random.nextInt(types.length)];
             String manufacturer = manufacturers[random.nextInt(manufacturers.length)];
 
-            Hardware hardware = new Hardware(model, type, manufacturer);
+            Hardware hardware = new Hardware();
             hardwareList.add(hardware);
         }
 
@@ -44,7 +44,7 @@ public class ControllerService {
             String name = names[random.nextInt(names.length)];
             String producer = producers[random.nextInt(producers.length)];
 
-            HEMS hems = new HEMS(name, producer, addHardwares());
+            HEMS hems = new HEMS();
             differentHEMS.add(hems);
         }
 
