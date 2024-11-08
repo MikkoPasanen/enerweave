@@ -1,9 +1,6 @@
 package enerweave.backend.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,11 +15,17 @@ public class HEMS {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
-    String name;
+    private String name;
 
-    String producer;
+    private String producer;
 
-    List<Hardware> supportedHardwares;
+    @ManyToMany
+    @JoinTable(
+            name = "HEMS_Hardware",
+            joinColumns = @JoinColumn(name = "hems_id"),
+            inverseJoinColumns = @JoinColumn(name = "hardware_id")
+    )
+    private List<Hardware> supportedHardwares;
 }

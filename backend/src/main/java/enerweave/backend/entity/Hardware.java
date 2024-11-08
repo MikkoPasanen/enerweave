@@ -1,12 +1,11 @@
 package enerweave.backend.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -16,11 +15,14 @@ public class Hardware {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
-    String model;
+    private String model;
 
-    String category;
+    private String category;
 
-    String producer;
+    private String producer;
+
+    @ManyToMany(mappedBy = "supportedHardwares")
+    private List<HEMS> hemsProviders;
 }
