@@ -1,0 +1,82 @@
+@use 'variables' as *;
+
+.select-badge {
+    margin-left: auto;
+    background-color: lightgray;
+    color: black;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 3px 5px;
+}
+
+h3 {
+    font: 100% $font;
+    color: $secondary-color;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+p {
+    font: 100% $font;
+    color: $secondary-color;
+}
+
+.hardware-container {
+    display: flex;
+    justify-content: space-around;
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        h3 {
+            margin: 0;
+            margin-bottom: 50px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            margin-bottom: 50px;
+
+            .filter-checkbox {
+                text-align: center;
+                margin-right: 20px;
+
+                input {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .dropdown {
+            width: 100%;
+        }
+    }
+
+    .right-side {
+        .selected-hardware {
+            display: flex;
+            justify-content: end;
+            margin-bottom: 20px;
+
+            p {
+                background-color: $inactive-color;
+                text-align: center;
+                padding: 5px;
+            }
+
+            button {
+                border: none;
+                background: none;
+                cursor: pointer;
+                font-size: 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
