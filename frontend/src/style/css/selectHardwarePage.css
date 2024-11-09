@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.select-badge {
+  margin-left: auto;
+  background-color: lightgray;
+  color: black;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 3px 5px;
+}
+
+h3 {
+  font: 100% "Open Sans", sans-serif;
+  color: #1b335f;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+p {
+  font: 100% "Open Sans", sans-serif;
+  color: #1b335f;
+}
+
+.hardware-container {
+  display: flex;
+  justify-content: space-around;
+}
+.hardware-container .left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.hardware-container .left-side h3 {
+  margin: 0;
+  margin-bottom: 50px;
+}
+.hardware-container .left-side .checkbox-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+.hardware-container .left-side .checkbox-container .filter-checkbox {
+  text-align: center;
+  margin-right: 20px;
+}
+.hardware-container .left-side .checkbox-container .filter-checkbox input {
+  width: 20px;
+  height: 20px;
+}
+.hardware-container .left-side .dropdown {
+  width: 100%;
+}
+.hardware-container .right-side .selected-hardware {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+.hardware-container .right-side .selected-hardware p {
+  background-color: #BDBDBD;
+  text-align: center;
+  padding: 5px;
+}
+.hardware-container .right-side .selected-hardware button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=selectHardwarePage.css.map */
