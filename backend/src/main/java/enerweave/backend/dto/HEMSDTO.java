@@ -1,6 +1,8 @@
-package enerweave.backend.entity;
+package enerweave.backend.dto;
 
+import enerweave.backend.entity.Hardware;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
@@ -8,7 +10,8 @@ import java.util.List;
 // Contains all the necessary info from the HEMS that will be returned to the frontend
 @Data
 @AllArgsConstructor
-public class ToReturnHEMS {
+@Builder
+public class HEMSDTO {
     String name;
     String producer;
 

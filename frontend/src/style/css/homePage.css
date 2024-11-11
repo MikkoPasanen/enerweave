@@ -6,21 +6,11 @@ header {
   align-items: center;
   margin-top: 100px;
 }
-header h1 {
-  font: 100% "Raleway", "Open Sans";
-  color: #1b335f;
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-header h1 span {
-  font-weight: bold;
-}
-header h3 {
+header .homepage-h3 {
   font: 100% "Open Sans", sans-serif;
   color: #1b335f;
   font-size: 24px;
   margin-bottom: 20px;
-  margin-bottom: 100px;
 }
 header img {
   height: auto;
@@ -28,6 +18,34 @@ header img {
 }
 header button {
   margin-top: 200px;
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage-container button {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #1b335f;
+  color: #ffffff;
+  border-radius: 1.5rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.homepage-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  gap: 3rem;
+}
+
+.homepage-info {
+  text-align: center;
 }
 
 /*# sourceMappingURL=homePage.css.map */

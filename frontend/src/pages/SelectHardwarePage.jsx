@@ -8,6 +8,7 @@ import CustomStepper from "../components/Stepper";
 // Styles & assets
 import "../style/css/selectHardwarePage.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import Navbar from "../components/Navbar";
 
 const SelectHardwarePage = () => {
 
@@ -51,6 +52,7 @@ const SelectHardwarePage = () => {
 
     return (
         <>
+            <Navbar />
             <CustomStepper activeStep={0} />
             <h3>
                 Select the appliances you own or that you are planning to buy:

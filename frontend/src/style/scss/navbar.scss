@@ -1,0 +1,38 @@
+@use "variables" as *;
+
+h1 {
+    font: 100% $header-font;
+    font-size: 46px;
+    color: $secondary-color;
+    margin: 5px 15px;
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.navbar {
+  position: top;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  color: $primary-color;
+  font: 100% $font;
+  height: 100%;
+  width: 100%;
+  gap: 10rem;
+  padding: 20px;
+
+  a, p {
+    font-size: 16px;
+    color: $primary-color;
+    text-decoration: none;
+  }
+}

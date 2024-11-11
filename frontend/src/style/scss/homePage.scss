@@ -1,38 +1,55 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 
-    h1 {
-        font: 100% $header-font;
-        color: $secondary-color;
-        font-size: 48px;
-        margin-bottom: 20px;
+  .homepage-h3 {
+    font: 100% $font;
+    color: $secondary-color;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 
-        span {
-            font-weight: bold;
-        }
-    }
+  img {
+    height: auto;
+    width: 300px;
+  }
 
-    h3 {
-        font: 100% $font;
-        color: $secondary-color;
-        font-size: 24px;
-        margin-bottom: 20px;
-        margin-bottom: 100px;
-    }
+  button {
+    margin-top: 200px;
+  }
+}
 
-    img {
-        height: auto;
-        width: 300px;
-    }
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    button {
-        margin-top: 200px;
-    }
+  button {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-radius: 1.5rem;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+.homepage-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  gap: 3rem;
+}
+
+.homepage-info {
+  text-align: center;
 }
 

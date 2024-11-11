@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-#RFS-Label {
+.stepper #RFS-Label {
   font: 100% "Open Sans", sans-serif;
   color: #1b335f;
 }

@@ -5,7 +5,7 @@ import "../style/css/stepper.css"
 
 const CustomStepper = ({ activeStep }) => {
     return (
-        <>
+        <div className="stepper">
             <Stepper
                 activeStep={activeStep}
                 styleConfig={{
@@ -20,7 +20,7 @@ const CustomStepper = ({ activeStep }) => {
                 <Step label="Our recommendations" />
                 <Step label="Your final choice" />
             </Stepper>
-        </>
+        </div>
     );
 };
 

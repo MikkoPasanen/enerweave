@@ -1,6 +1,6 @@
 package enerweave.backend.exceptions;
 
-import enerweave.backend.entity.ErrorResponse;
+import enerweave.backend.responses.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

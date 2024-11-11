@@ -1,5 +1,6 @@
 package enerweave.backend.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,5 +25,6 @@ public class Hardware {
     private String producer;
 
     @ManyToMany(mappedBy = "supportedHardwares")
+    @JsonIgnore
     private List<HEMS> hemsProviders;
 }

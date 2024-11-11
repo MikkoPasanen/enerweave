@@ -1,4 +1,4 @@
-package enerweave.backend.entity;
+package enerweave.backend.responses;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
