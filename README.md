@@ -12,3 +12,17 @@ It isn’t just about technology, it’s about empowering homeowners to take cha
 EnerWeave has been developed in collaboration with Spine Energy, Business Information Systems students from Tampere University of Applied Sciences, and Business students from Hochschule München University of Applied Sciences.
 
 ## Pictures
+### Home page
+<img src="home.PNG"/>
+
+### Select applicances page
+User can filter down the hardwares either with hardware category or manufacturer or user can directly search for applicances in the dropdown by typing.
+
+
+<img src="select.png"/>
+
+### Results page
+Recommended HEMS(s) are ordered with the most appliances supported top to bottom. Expandable card opens with detailed information about each HEMS and links to relevant sites.
+
+
+<img src="results.PNG"/>
